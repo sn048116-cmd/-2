@@ -22,4 +22,4 @@ jobs:
           NIKKO_ID: ${{ secrets.NIKKO_ID }}
           NIKKO_PW: ${{ secrets.NIKKO_PW }}
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-        run: python test_check.py
+        run: python main.py
