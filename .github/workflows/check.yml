@@ -1,0 +1,25 @@
+name: Nikko_Stock_Watcher
+on:
+  schedule:
+    - cron: '*/15 * * * *'  # 15分おきに自動実行
+  workflow_dispatch:       # 手動で動かすボタンを表示
+
+jobs:
+  run_check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Install dependencies
+        run: |
+          pip install playwright requests
+          playwright install chromium
+      - name: Run Stock Checker
+        env:
+          NIKKO_ID: ${{ secrets.NIKKO_ID }}
+          NIKKO_PW: ${{ secrets.NIKKO_PW }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: python main.py
