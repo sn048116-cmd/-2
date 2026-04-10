@@ -17,7 +17,7 @@ jobs:
         run: |
           pip install playwright requests
           playwright install chromium
-      - name: Run Stock Checker
+      - name: Final Check
         env:
           NIKKO_ID: ${{ secrets.NIKKO_ID }}
           NIKKO_PW: ${{ secrets.NIKKO_PW }}
