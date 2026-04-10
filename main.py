@@ -22,3 +22,5 @@ def final_test():
 
 if __name__ == "__main__":
     final_test()
+print("★最新のコードが動いています★")
+    
