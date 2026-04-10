@@ -2,7 +2,7 @@ import os
 import requests
 from playwright.sync_api import sync_playwright
 
-# 先ほど成功したURLをここに貼る
+# 先ほど成功したURLをここに貼
 URL = "https://discord.com/api/webhooks/1492131624702185743/lN_ikLcRtnvdaIs0FouO19FZp0d5RV4__KBOId7sP7FUggOqkpyEUUOj2zVmZQfWOmBU"
 
 # 証券番号（ロイホ：8179）
