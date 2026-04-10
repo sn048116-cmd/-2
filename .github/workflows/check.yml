@@ -13,4 +13,4 @@ jobs:
       - name: Install dependencies
         run: pip install requests playwright && playwright install chromium
       - name: Run logic
-        run: python main.py # ← ここで「main.py」を動かすとハッキリ指定します
+        run: python stock.py # ← ここで「main.py」を動かすとハッキリ指定します
