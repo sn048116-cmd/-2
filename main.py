@@ -1,9 +1,9 @@
 import requests
 
 # GitHubのSecretsを使わず、直接URLを指定します
-WEBHOOK_URL = "https://discord.com/api/webhooks/1492111184957149375/xc-0_jU1E7Mg_B4yHMZgLHHfe2z96PC5lpE-VuMNwZsgpkgl8x-soIkFqF3iygstuHp9"
+WEBHOOK_URL = "https://discord.com/api/webhooks/1492131624702185743/lN_ikLcRtnvdaIs0FouO19FZp0d5RV4__KBOId7sP7FUggOqkpyEUUOj2zVmZQfWOmBU"
 
-def test_send():
+def test_send():https://discord.com/api/webhooks/1492131624702185743/lN_ikLcRtnvdaIs0FouO19FZp0d5RV4__KBOId7sP7FUggOqkpyEUUOj2zVmZQfWOmBU
     print("送信テストを開始します...")
     data = {"content": "✅ なおこさん、届きましたか？これが届けば設定は成功です！"}
     response = requests.post(WEBHOOK_URL, json=data)
